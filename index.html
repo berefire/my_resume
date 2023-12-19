@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My resume</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Font letter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- header section starts -->
+
+    <header>
+
+        <div class="user">
+            <img src="./images/foto de berenice prado 1708.jpg" alt="BPV-photo">
+            <h3 class="name">Berenice Prado Villalobos</h3>
+            <p class="post">Software Developer Engineer</p>
+        </div>
+
+        <nav  class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#myskills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+        <h3>HI THERE !</h3>
+        <h1>I'm <span>Berenice Prado</span></h1>
+        <p>Embedded Engineer with over 5 years of experience in developing and testing firmware and embedded systems. Proficient in C/C++ programming, including experience with classes, objects, polymorphis, inheritance and other concepts related to object-oriented programming (OOP). Skilled in using debugging tools such as GCC and G++ compilers, as well as the CMake build system for automating builds in Linux enviroments. Experienced in writting and running unit tests using GTest. Additionally, I have experience in direct communication and customer support.
+        </p>
+        <a href="#myskills"><button class="btn">My Skills<i class="fa fa-check-square"></i></button></a>
+    </section>
+    <!-- home section ends -->
+
+    <!-- skills section starts -->
+    <section class="about" id="myskills">
+
+        <h1 class="heading">My <span> Skills </span></h1>
+
+        <div class="row">
+            <!-- 
+            <div class="info">
+                <h3> <span> name: </span> Berenice Prado Villalobos </h3>
+                <h3> <span> age: </span> 35 </h3>
+                <h3> <span> language: </span> Spanish and English </h3>
+                <h3> <span> qualificaition: </span> BMS </h3>
+                <h3> <span> post: </span> Software Developer Engineer </h3>
+                <a href="#"><button class="btn">download CV <i class="fas fa-download"></i></button></a>
+            </div> -->
+
+            <div class="counter">
+                <div class="box">
+                    <span>C++</span>
+                </div>
+                <div class="box">
+                    <span>C</span>
+                </div>
+                <div class="box">
+                    <span>QCAT</span>
+                </div>
+                <div class="box">
+                    <span>MQTT</span>
+                </div>
+                <div class="box">
+                    <span>Linux</span>
+                </div>
+                <div class="box">
+                    <span>GCC</span>
+                </div>
+                <div class="box">
+                    <span>G++</span>
+                </div>
+                <div class="box">
+                    <span>JIRA</span>
+                </div>
+                <div class="box">
+                    <span>GDB</span>
+                </div>
+                <div class="box">
+                    <span>CMake</span>
+                </div>
+                <div class="box">
+                    <span>Docker</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skills section ends -->
+
+    <!-- education section starts -->
+    <section class="education" id="education">
+        <h1 class="heading">My <span>Education</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2022</span>
+                <h3>Security on Embedded Systems Trainning</h3>
+                <p>Instituto Tecnológico y de Estudios Superiores de Occidente</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2015</span>
+                <h3>Master Degree in Electric Engineering</h3>
+                <p>Universidad Autónoma de San Luis Potosí</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2012</span>
+                <h3>Bachelor Degre in Electronics Engineering</h3>
+                <p>Instituto Tecnológico de Aguascalientes</p>
+            </div>
+        </div>
+    </section>
+    <!-- education section ends -->
+
+    <!-- portfolio section starts -->
+    <section class="portfolio" id="experience">
+        <h1 class="heading">My <span>Experience</span></h1>
+        <div class="box-container">
+            <div  class="box">
+                <img src="./images/continental.jpeg" alt="continental">
+            </div>
+            <div class="texto">
+            <span>December 2017 - June 2023</span>
+            <h3>Continental, former infotainment BU</h3>
+            </div>
+        </div>
+        <div class="paragraph-experience">
+            <p> I worked with a Telematic Unit for two OEM clients, where I increased the unit test cases to achieve code coverage from 0% to 80% on C++ code using GTest for the connectivity application. I also handed bug patching on externally provided code reported by the customer, which involved identifying the root cause, communicating with the provider and implementing the code fixes using patches.
+            </p>
+            <p> Additionally, I patched software module called IPACM used in embedded systems that control the allocation and management of IP addresses, which consisted of more than 2000 lines of code. This update was necessary to add a use case to avoid potential issues when the device upadates a new MQTT connection to the cloud. The code was written in OOP in C++ and thoroughly unit tested with GTest.</p>
+            <p> For building and testing the projects, I worked with Docker and used the GDB debugger to read the core dumps when a Linux process ended abruptly. I also used Qualcomm QCAT to read what the modem send to the cellular network and see if the connection was approved by cellphone provider.
+            </p>
+            <p> All these activities were assigned and tracked using JIRA, and code reviews and integration were done through Gerrit. The projects followed AGILE methodologies throughout its execution.</p>
+        </div>
+    </section>
+    <!-- portfolio section ends -->
+
+    <!-- contact section starts -->
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>Contact</span> Me </h1>
+        <div class="row">
+            <div class="content">
+                <h3 class="title">contact info</h3>
+                <div class="info">
+                    <h3> <i class="fas fa-envelope"></i> berenice.prado.villalobos@gmail.com</h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i> Aguascalientes, México.</h3>
+                </div>
+            </div>
+
+            
+            <!-- 
+            <form action="">
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="text" placeholder="project" class="box">
+                <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+                <button type="submit" class="btn">send<i class="fas fa-paper-plane"></i></button>
+            </form> -->
+        </div>
+    </section>
+    <!-- contact section ends -->
+
+    <!-- scroll top button -->
+    <a href="#home" class="top">
+        <img src="./images/rocket.png" alt="rocket">
+    </a>
+
+
+
+
+    <!-- jquery cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- custom js file link -->
+    <script src="./script.js"></script>
+    
+</body>
+</html>
